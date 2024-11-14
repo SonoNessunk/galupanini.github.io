@@ -1,19 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-    --main-color: #30d361;
-    --hover-color: #5de27c;
+    --main-color: #d33030;
+    --hover-color: #e25d5d;
     --text-color: #CCC;
-    --nav-color: #242526;
-    --body-color: #000000;
+    /* --nav-color: rgba(0, 0, 0, 0.174); */
+    --nav-color: #000000bf;
+    --body-color: #2e2e2e;
     --side-nav: #242526;
     --search-text: #CCC;
     --search-bar: #242526;
     --text-color-lg: #F2F2F2;
-    --nav-line: #3ee174;
-    --content-color: #525252;
+    --nav-line: #e13e3e;
+    --content-title: #ffffff;
+    --content-background: #000000bf;
+    --footer-color: #000000f2;
 }
-
 *{
     margin: 0;
     padding: 0;
@@ -26,9 +28,14 @@
 }
 
 body {
-    background-color: var(--body-color);
-    height: 100vh;
+    /* background-image: linear-gradient(346deg, rgba(55, 55, 55,0.04) 0%, rgba(55, 55, 55,0.04) 22%,rgba(140, 140, 140,0.04) 22%, rgba(140, 140, 140,0.04) 69%,rgba(225, 225, 225,0.04) 69%, rgba(225, 225, 225,0.04) 100%),linear-gradient(31deg, rgba(55, 55, 55,0.04) 0%, rgba(55, 55, 55,0.04) 42%,rgba(140, 140, 140,0.04) 42%, rgba(140, 140, 140,0.04) 85%,rgba(225, 225, 225,0.04) 85%, rgba(225, 225, 225,0.04) 100%),linear-gradient(55deg, rgba(55, 55, 55,0.04) 0%, rgba(55, 55, 55,0.04) 13%,rgba(140, 140, 140,0.04) 13%, rgba(140, 140, 140,0.04) 72%,rgba(225, 225, 225,0.04) 72%, rgba(225, 225, 225,0.04) 100%),linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0)); */
+    background-image: url(../img/background/BG-Outline.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
     color: var(--text-color);
+    background-color: #000000;
 }
 
 
@@ -37,18 +44,10 @@ body {
     line-height: 1.5rem;
 }
 
-.norm-txt-dk {
-    font-size: .95rem;
-    line-height: 1.5rem;
-    color: #374151;
-}
-
 .body-fix {
     display: grid;
-    position: relative; 
-    gap: 1rem; 
+    position: relative;
     justify-items: center; 
     place-content: center; 
-    height: 100vh;
-    background: var(--body-color);
+    min-height: 100vh;
 }
